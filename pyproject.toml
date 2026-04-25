@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "async-task-engine"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "psycopg[binary]",
+    "prometheus-client",
+    "httpx",
+    "pydantic",
+    "python-dotenv"
+]
+dev-dependencies = [
+    "pytest",
+    "pytest-asyncio",
+    "ruff"
+]
