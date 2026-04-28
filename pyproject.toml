@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "async-task-engine"
-requires-python = ">=3.14"
+requires-python = ">=3.13"
 dependencies = [
     "fastapi",
     "uvicorn",
-    "psycopg[binary]",
+    "psycopg[binary,pool]",
     "prometheus-client",
     "httpx",
     "pydantic",
